@@ -76,14 +76,14 @@ const students = [
 const createStudentComponent = (name, subject, info, score) => {
     if (score > 60) {
         return `
-        <div class="student passing">
-            <h1>${name}</h1>
-            <section>${subject}</section>
-            <aside>${info}</aside>
+        <div class="student">
+            <h1 class="xx-large passing">${name}</h1>
+            <section class="bordered dashed section--padded">${subject}</section>
+            <aside class="pushRight">${info}</aside>
         </div>
     `} else {
-        return `<div class="student failing">
-        <h1>${name}</h1>
+        return `<div class="student">
+        <h1 class="failing">${name}</h1>
         <section>${subject}</section>
         <aside>${info}</aside>
     </div>
